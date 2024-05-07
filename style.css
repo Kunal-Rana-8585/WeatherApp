@@ -1,0 +1,141 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-X: hidden;
+  background-image: url("/Assets/Day.jpg");
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 3px 3px 1px #121212;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #444;
+}
+
+main {
+  width: 100%;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box1{
+  width: 340px;
+}
+.box3{
+  width: 300px;
+}
+.current-weather {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info {
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin:10px;
+}
+.location{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.temp{
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  font-size: 44px;
+}
+.feelTemp{
+  font-size: 17px;
+}
+.day{
+  font-weight: 600;
+  padding-left: 20px;
+  font-size: 24px;
+}
+.weather{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#weather-description{
+  font-size: 25px;
+}
+.box3 p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image{
+  filter:drop-shadow(5px 15px 10px #222); 
+}

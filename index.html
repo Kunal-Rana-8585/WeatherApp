@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Forecast</h1>
+      <form id="form">
+        <input type="text" class="search-bar" placeholder="Enter City Name">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+
+        <div class="box1">
+          <div class="location">
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/marker.png" alt="marker"/>
+            <h3 class="location_data"></h3>
+          </div>
+          <div class="day">
+            <p class="day1"></p>
+          </div>
+          <div class="temp">
+            <img width="65" height="75" src="https://img.icons8.com/color/48/temperature--v1.png" alt="temperature--v1"/>
+            <div class="temperature">
+              <div id="t"></div>
+              <div class="feelTemp"></div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="box2">
+          <div class="image"></div>
+          <div class="weather"></div>
+        </div>
+        <div class="box3 weather-info">
+          <h2 id="weather-description">Weather Description</h2>
+          
+            <p><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/humidity.png" alt="humidity"/>
+              Humidity :- 
+              <span id="humidity"></span>
+            </p>
+            <p>
+              <img width="30" height="30" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-uv-index-weather-flaticons-lineal-color-flat-icons-2.png" alt="external-uv-index-weather-flaticons-lineal-color-flat-icons-2"/>
+              UV Index :-
+              <span id="uv"></span>
+            </p>
+            <p><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/pressure.png" alt="pressure"/>
+              Pressure :-
+              <span id="pressure"></span>
+            </p>
+            <p><img width="30" height="30" src="https://img.icons8.com/external-smashingstocks-isometric-smashing-stocks/55/external-wind-direction-travel-summer-vacation-smashingstocks-isometric-smashing-stocks.png" alt="wind-direction"/>
+              Wind Direction :-
+              <span id="windDirection"></span>
+            </p>
+            <p><img width="30" height="30" src="https://img.icons8.com/ios/50/wind--v1.png" alt="windSpeed"/>
+              Wind Speed :-
+              <span id="windSpeed"></span>
+            </p>            
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
