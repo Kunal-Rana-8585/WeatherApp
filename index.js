@@ -22,8 +22,6 @@ const days = [
   "Saturday",
 ];
 
-let keyPass = "1d2eee7cac28452a84653022240704";
-
 function getLocation() {
   navigator.geolocation.getCurrentPosition(
     function (position) {
@@ -43,7 +41,7 @@ function getLocation() {
 async function weatherapi(val) {
   try {
     let content = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${keyPass}&q=${val}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=1d2eee7cac28452a84653022240704&q=${val}&aqi=no`
     );
 
     let data = await content.json();
