@@ -48,7 +48,7 @@ async function weatherapi(val) {
     changeVal(data);
     console.log(data);
   } catch (err) {
-    // console.log(err);
+    console.log(err);
   }
 }
 document.querySelector(".search-btn").addEventListener("click", (e) => {
